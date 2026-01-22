@@ -14,7 +14,7 @@ def run():
 
             print("\nResults Found:\n")
 
-            ips = set()  # evita IP duplicado
+            ips = set() #<- avoids duplicate IP addresses
 
             filename = "dns_found.txt"
             with open(filename, "w") as output:
