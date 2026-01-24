@@ -15,13 +15,16 @@ def run():
         print("Welcome")
         ascii_banner = pyfiglet.figlet_format("Nexus")
         print(ascii_banner)
+        print('-' * 32)
         print("The swiss army knife for pentest.")
         print('''
-    [ 1 ] Port Scanner
-    [ 2 ] Subdomain Finder
-    [ 3 ] DNS Lookup
-    [ 4 ] Exploit Database Search
-    [ 5 ] Exit''')
+==============================
+[ 1 ] Port Scanner
+[ 2 ] Subdomain Finder
+[ 3 ] DNS Lookup
+[ 4 ] Exploit Database Search
+[ 5 ] Exit
+==============================''')
         choice = input("Select an option: ").strip()
 
         if choice == '1':
