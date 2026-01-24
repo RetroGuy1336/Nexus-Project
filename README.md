@@ -76,7 +76,7 @@ Reference: https://nvd.nist.gov/vuln/detail/CVE-2021-44228
 
 ## How to use the Nexus
 1. Download the Nexus tool from the repository using the command:
-   ```git clone https://github.com/RetroGuy1336/Nexus-Project.git``
+   ``` git clone https://github.com/RetroGuy1336/Nexus-Project.git ```
 2. Install the required Python packages using pip:
    ``` pip install -r requirements.txt ```
 3. Run the Nexus tool using Python:
