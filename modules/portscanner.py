@@ -16,11 +16,13 @@ def run():
         initial_port = int(input("Initial port (0-65535): "))
         final_port = int(input("Final port (0-65535): "))
         stealth = int(input('''Waiting time between each door
+-=-=-=-=-=-=-=-=-=-=-=
 [ 0 ] Aggressive
 [ 1 ] Less Aggressive
 [ 2 ] Moderate
 [ 3 ] Silent
 [ 4 ] Stealth Mode
+-=-=-=-=-=-=-=-=-=-=-
 : '''))
 
         #DICTIONARY OF STEALTH MODES
@@ -120,6 +122,7 @@ def run():
         elif ip_type == 2:
             scan_ipv6()
 
+        print('-=' * 21)
         resp = str(input("Do you want to perform another scan? [Y/N]: ")).upper().strip()
         if resp == 'S':
             clear_screen()

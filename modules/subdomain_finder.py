@@ -29,7 +29,7 @@ def scan_subdomains(domain, wordlist_path):
             full_domain = f"{sub}.{domain}"
             try:
                 socket.gethostbyname(full_domain)
-                print(f"[+] {full_domain}")
+                print(f"[+] {full_domain} | Discovered")
                 output.write("-=" * 15 + "\n")
                 output.write(full_domain + "\n")
                 output.flush() 

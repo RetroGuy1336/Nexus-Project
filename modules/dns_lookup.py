@@ -12,6 +12,7 @@ def run():
         try:
             results = socket.getaddrinfo(domain_adress, None)
 
+            print('-=' * 15)
             print("\nResults Found:\n")
 
             ips = set() #<- avoids duplicate IP addresses
@@ -24,7 +25,7 @@ def run():
                     ips.add(ip)
 
                 for ip in ips:
-                    print(ip)
+                    print('--> ' + ip + ' | Discovered')
                     output.write("-=" * 15 + "\n")
                     output.write(ip + "\n")
                     output.flush() 
