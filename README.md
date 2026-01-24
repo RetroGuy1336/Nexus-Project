@@ -75,10 +75,13 @@ Description: A critical vulnerability in Apache Log4j2 that allows remote code e
 Reference: https://nvd.nist.gov/vuln/detail/CVE-2021-44228
 
 ## How to use the Nexus
-1. Download the Nexus tool from the repository.
+1. Download the Nexus tool from the repository using the command:
+   ```git clone https://github.com/RetroGuy1336/Nexus-Project.git``
 2. Install the required Python packages using pip:
    ```pip install -r requirements.txt```
 3. Run the Nexus tool using Python:
    ```python3 main.py```
 4. Follow the on-screen instructions to select and use the desired functionality.
 
+## Contributing
+Contributions to the Nexus project are welcome! If you have suggestions for new features, improvements, or bug fixes, please submit a pull request or open an issue on the GitHub repository.
