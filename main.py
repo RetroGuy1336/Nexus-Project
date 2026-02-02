@@ -25,21 +25,21 @@ def run():
 [ 4 ] Exploit Database Search
 [ 5 ] Exit
 ==============================''')
-        choice = input("Select an option: ").strip()
+        choice = int(input("Select an option: "))
 
-        if choice == '1':
+        if choice == 1:
             clear()
             portscanner.run()
-        elif choice == '2':
+        elif choice == 2:
             clear()
             subdomain_finder.run()
-        elif choice == '3':
+        elif choice == 3:
             clear()
             dns_lookup.run()
-        elif choice == '4':
+        elif choice == 4:
             clear()
             exploit_db_search.run()
-        elif choice == '5':
+        elif choice == 5:
             print("Exiting...")
             exit()
         else:
