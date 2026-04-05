@@ -2,6 +2,8 @@ import socket
 import time
 import os
 
+blue = '\033[1;34m'
+
 def save_results(filename, open_ports, service_name):
     with open(filename, "w") as output:
         output.write("Open Ports:\n")
@@ -10,11 +12,13 @@ def save_results(filename, open_ports, service_name):
 
 def run():
     while True:
+        print(blue)
         #INSERT THE HOST AND THE TYPE OF IP TO SCAN
         ip_type = int(input("IP Type (1- IPv4 | 2- IPv6): "))
         host = input("Host: ")
         initial_port = int(input("Initial port (0-65535): "))
         final_port = int(input("Final port (0-65535): "))
+        print('-' * 32)
         stealth = int(input('''Waiting time between each door
 -=-=-=-=-=-=-=-=-=-=-=
 [ 0 ] Aggressive

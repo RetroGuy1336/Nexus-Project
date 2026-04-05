@@ -1,5 +1,7 @@
 import socket
 
+yellow = '\033[1;33m'
+
 WORDLISTS = {
     1: "wordlists/n0kovo_subdomains_tiny.txt",
     2: "wordlists/n0kovo_subdomains_small.txt",
@@ -41,6 +43,7 @@ def scan_subdomains(domain, wordlist_path):
     input("\nPress Enter to exit...")
 
 def run():
+    print(yellow)
     print("Subdomain Finder selected")
     print("Select the type of subdomain search")
 

@@ -1,10 +1,13 @@
 import socket
 import os
 
+blue = '\033[1;34m'
+
 def clear():
     os.system('cls' if os.name == 'nt' else 'clear')
 def run():
     while True:
+        print(blue)
         print("Dns Lookup selected")
         print("Enter the domain adress. Ex:www.google.com")
         domain_adress = str(input(": "))

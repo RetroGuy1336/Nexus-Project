@@ -9,12 +9,21 @@ def clear():
     os.system('cls' if os.name == 'nt' else 'clear')
 
 clear()
+white = '\033[1;30m'
+red = '\033[1;31m'
+green = '\033[1;32m'
 
 def run():
     while True:
-        print("Welcome")
+        print(white)
+        print("Welcome to")
         ascii_banner = pyfiglet.figlet_format("Nexus")
+        print(red)
         print(ascii_banner)
+        print(white)
+        print('=' * 32)
+        print("[ + ] Made by RetroGuy1336 [ + ]")
+        print(green)
         print('-' * 32)
         print("The swiss army knife for pentest.")
         print('''
