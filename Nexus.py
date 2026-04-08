@@ -23,6 +23,7 @@ def run():
         print(white)
         print('=' * 32)
         print("[ + ] Made by RetroGuy1336 [ + ]")
+        print("=" * 32)
         print(green)
         print('-' * 32)
         print("The swiss army knife for pentest.")
