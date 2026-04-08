@@ -34,7 +34,7 @@ def run():
 [ 4 ] Exploit Database Search
 [ 5 ] Exit
 ==============================''')
-        choice = int(input("Select an option: "))
+        choice = int(input("@Nexus~#  "))
 
         if choice == 1:
             clear()

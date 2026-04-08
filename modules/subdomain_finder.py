@@ -10,6 +10,26 @@ WORDLISTS = {
     5: "wordlists/n0kovo_subdomains_huge.txt"
 }
 
+tux = r'''
+            .-"""-.
+           '       \
+          |,.  ,-.  |
+          |()L( ()| |                 -----------------
+          |,'  `".| |                 |   SUBDOMAIN   |
+          |.___.',| `                 |    FINDER     |
+         .j `--"' `  `.               -----------------
+        / '        '   \
+       / /          `   `.
+      / /            `    .
+     / /              l   |
+    . ,               |   |
+    ,"`.             .|   |
+ _.'   ``.          | `..-'l
+|       `.`,        |      `.
+|         `.    __.j         )
+|__        |--""___|      ,-'
+   `"--...,+""""   `._,.-' 
+'''
 
 def scan_subdomains(domain, wordlist_path):
     found = 0
@@ -44,17 +64,21 @@ def scan_subdomains(domain, wordlist_path):
 
 def run():
     print(yellow)
+    print(tux)
+    print('=' * 35)
     print("Subdomain Finder selected")
     print("Select the type of subdomain search")
 
     try:
         domain_type = int(input("""
+===================
 [ 1 ] Faster
 [ 2 ] Summary
 [ 3 ] The majority
 [ 4 ] Complete
 [ 5 ] All of this
-: """))
+===================
+@Nexus~# """))
     except ValueError:
         print("Invalid option.")
         return

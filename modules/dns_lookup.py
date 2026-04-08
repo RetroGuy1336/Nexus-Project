@@ -2,15 +2,40 @@ import socket
 import os
 
 blue = '\033[1;34m'
+magnifying_glass = r'''
+            ______              
+         .-'      `-.           
+       .'            `.         
+      /                \        
+     ;                 ;`       
+     |         H       |;      -------------------------
+     ;                 ;|      |                       |
+     '\               / ;      |      DNS LOOKUP       |
+      \`.           .' /       |                       |
+       `.`-._____.-' .'        -------------------------
+         / /`_____.-'           
+        / / /                   
+       / / /
+      / / /
+     / / /
+    / / /
+   / / /
+  / / /
+ / / /
+/ / /
+\/_/
+'''
 
 def clear():
     os.system('cls' if os.name == 'nt' else 'clear')
 def run():
     while True:
         print(blue)
+        print(magnifying_glass)
+        print('=' * 42)
         print("Dns Lookup selected")
         print("Enter the domain adress. Ex:www.google.com")
-        domain_adress = str(input(": "))
+        domain_adress = str(input("@Nexus~# "))
 
         try:
             results = socket.getaddrinfo(domain_adress, None)

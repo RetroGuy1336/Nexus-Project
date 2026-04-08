@@ -3,6 +3,7 @@ import time
 import os
 
 blue = '\033[1;34m'
+red = '\033[1;31m'
 
 def save_results(filename, open_ports, service_name):
     with open(filename, "w") as output:
@@ -10,8 +11,27 @@ def save_results(filename, open_ports, service_name):
         for port in open_ports:
             output.write(f"{port}: {service_name}\n")
 
+ghost = r'''
+     .-.
+   .'   `.                  ---------------
+   :g g   :               < | PORTSCANNER |
+   : o    `.                ---------------
+  :         ``.
+ :             `.
+:  :         .   `.
+:   :          ` . `.
+ `.. :            `. ``;
+    `:;             `:'
+       :              `.
+        `.              `.     .
+          `'`'`'`---..,___`;.-'
+'''.center(30)
+
 def run():
     while True:
+        print(red)
+        print(ghost)
+        print('=' * 32)
         print(blue)
         #INSERT THE HOST AND THE TYPE OF IP TO SCAN
         ip_type = int(input("IP Type (1- IPv4 | 2- IPv6): "))
@@ -27,7 +47,7 @@ def run():
 [ 3 ] Silent
 [ 4 ] Stealth Mode
 -=-=-=-=-=-=-=-=-=-=-
-: '''))
+@Nexus~# '''))
 
         #DICTIONARY OF STEALTH MODES
         stealth_modes = {
