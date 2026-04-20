@@ -3,6 +3,7 @@ from modules import portscanner
 from modules import subdomain_finder
 from modules import dns_lookup
 from modules import exploit_db_search
+from banners import random_banner
 import os
 
 def clear():
@@ -20,9 +21,8 @@ def run():
             exit()
         print(white)
         print("Welcome to")
-        ascii_banner = pyfiglet.figlet_format("Nexus")
         print(red)
-        print(ascii_banner)
+        random_banner()
         print(white)
         print('=' * 32)
         print("[ + ] Made by RetroGuy1336 [ + ]")
