@@ -6,7 +6,7 @@ Warning: Nexus is designed to aid in information security in an ethical and secu
 - Python 3.10 or higher
 - Required Python packages (listed in requirements.txt)
 - Internet connection for certain functionalities
-- The OS must be Windows or Linux-based
+- The OS must be Linux-based
 
 
 ## TCP Port Scanner
@@ -67,21 +67,24 @@ Features:
 - It helps in finding exploits for an ethical penetration test.
 
 ## Example
-Input: CVE-2021-44228
+Input: MS17-010
 
 Output:
-Exploit found: Apache Log4j2 Remote Code Execution (CVE-2021-44228)
-Description: A critical vulnerability in Apache Log4j2 that allows remote code execution.
-Reference: https://nvd.nist.gov/vuln/detail/CVE-2021-44228
+Exploit found: EternalBlue Remote Code Execution 
+Description: A critical vulnerability in SMBv1 that allows remote code execution.
+Reference: https://www.exploit-db.com/search?q=MS17-010
 
 ## How to use the Nexus
 1. Download the Nexus tool from the repository using the command:
    ``` git clone https://github.com/RetroGuy1336/Nexus-Project.git ```
 2. Install the required Python packages using pip:
-   ``` pip install -r requirements.txt ```
+   ``` sudo pip install -r requirements.txt ```
 3. Run the Nexus tool using Python:
-   ```python3 main.py```
-4. Follow the on-screen instructions to select and use the desired functionality.
+   ```python3 Nexus.py```
+4. Take advantage of your new penetration testing tool, but do it ethically!
 
 ## Contributing
 Contributions to the Nexus project are welcome! If you have suggestions for new features, improvements, or bug fixes, please submit a pull request or open an issue on the GitHub repository.
+
+## Note
+To run Project Nexus, you need to run it with administrator privileges; otherwise, it will not work.

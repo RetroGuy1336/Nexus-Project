@@ -1,0 +1,7 @@
+-=-=-=-=NOTE=-=-=-=-
+
+If you want to enter the venv, simply type: source venv/bin/activate
+
+If you want to exit the venv, type: deactivate
+
+Or if you haven't created the virtual environment yet, type: python3 -m venv venv

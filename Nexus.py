@@ -15,6 +15,9 @@ green = '\033[1;32m'
 
 def run():
     while True:
+        if os.geteuid() != 0:
+            print("Execute with sudo!")
+            exit()
         print(white)
         print("Welcome to")
         ascii_banner = pyfiglet.figlet_format("Nexus")
