@@ -78,9 +78,9 @@ Reference: https://www.exploit-db.com/search?q=MS17-010
 1. Download the Nexus tool from the repository using the command:
    ``` git clone https://github.com/RetroGuy1336/Nexus-Project.git ```
 2. Install the required Python packages using pip:
-   ``` sudo pip install -r requirements.txt ```
+   ``` pip install -r requirements.txt ```
 3. Run the Nexus tool using Python:
-   ```python3 Nexus.py```
+   ``` sudo python3 Nexus.py```
 4. Take advantage of your new penetration testing tool, but do it ethically!
 
 ## Contributing
