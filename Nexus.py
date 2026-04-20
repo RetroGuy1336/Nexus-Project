@@ -6,7 +6,7 @@ from modules import exploit_db_search
 import os
 
 def clear():
-    os.system('cls' if os.name == 'nt' else 'clear')
+    os.system('clear')
 
 clear()
 white = '\033[1;30m'
